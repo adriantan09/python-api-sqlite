@@ -24,7 +24,7 @@ def delete_game(id):
     db.commit()
     return True
 
-def get_by_id(id):
+def get_game_by_id(id):
     db = get_db()
     cursor = db.cursor()
     statement = "SELECT * FROM games WHERE id = ?"
